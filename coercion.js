@@ -12,3 +12,7 @@ console.log('11', undefined=="")
 console.log('12', undefined==0)
 console.log('13', null==0);
 console.log('14', null=="");
+var a;
+if(a){
+    console.log('a has something')
+}
