@@ -25,7 +25,6 @@
       return this.firstName + "" + this.lastName;
     },
     validate: function () {
-      console.log(this.language)
       if (supportedLangs.indexOf(this.language) === -1) {
         throw "Invalid language";
       }
@@ -67,6 +66,22 @@
       this.validate();
       return this;
     },
+    HTMLGreetings: function (selector, formal) {
+      if (!$) {
+        throw "JQuery is not loaded";
+      }
+      if (!selector) {
+        throw "Missing jQuery Selector";
+      }
+      var msg;
+      if (formal) {
+        msg = this.formalGreetings();
+      } else {
+        msg = this.greetings();
+      }
+      $(selector).html(msg);
+      return this;
+    },
   };
 
   MyFunc.init = function (firstName, lastName, language) {
@@ -74,6 +89,8 @@
     self.firstName = firstName || "";
     self.lastName = lastName || "";
     self.language = language || "en";
+
+    self.validate();
   };
 
   MyFunc.init.prototype = MyFunc.prototype;
