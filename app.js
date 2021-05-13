@@ -1,2 +1,2 @@
 var m = M$('Krishna', 'Chittodia');
-console.log(m);
+m.greet().setLang('fs').validate().greet(true);
