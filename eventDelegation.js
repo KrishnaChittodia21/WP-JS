@@ -5,3 +5,4 @@ document.querySelector("#category").addEventListener("click", (e) => {
 document.querySelector("#name").addEventListener("keyup", (e) => {
   e.target.value = e.target.value.toUpperCase();
 })
+
