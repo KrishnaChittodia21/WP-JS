@@ -18,4 +18,4 @@ const getData = function (fn, delay) {
   };
 };
 
-const getBetterData = getData(getBadData, 5000);
+const getBetterData = getData(getBadData, 2000);
