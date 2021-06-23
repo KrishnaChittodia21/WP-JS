@@ -1,5 +1,5 @@
-function multiply(a,b) {
-  console.log(a*b)
+function multiply(a, b) {
+  console.log(a * b);
 }
 
 var multiplyTwo = multiply.bind(this, 2); //* it means giving a default value 2 so whenever multiplyTwo is call we don't have to pass value of a
@@ -13,3 +13,14 @@ multiplyTwo(4); //*here 4 is the value of b because we already set value of a
 
 var multiplyAgain = multiply.bind(this, 3, 3);
 multiplyAgain();
+
+//* function currying can also be done with closures
+
+var multiplyNew = function (x) {
+  return function (y) {
+    console.log(x * y);
+  };
+};
+
+var testIt = multiplyNew(4);
+testIt(3);
