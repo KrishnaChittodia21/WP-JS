@@ -10,7 +10,7 @@ const betterFunction = function(fn, delay) {
     args = arguments; //* same as above
     clearTimeout(timer);
     timer = setTimeout(() => {
-      getData.apply(context, arguments);
+      fn.apply(context, arguments);
     }, delay);
   };
 };
