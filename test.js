@@ -11,7 +11,19 @@ function first() {
 }
 
 // first();
+function foo(x) {
+  console.log(x);
+}
+const arr = new Array(1);
+arr.length=2;
+arr.push(2);
+arr.push(0);
 
+for (const num in arr) {
+  console.log('22222222', num)
+  foo(num);
+  foo(arr[num])
+}
 function x() {
   for (let i = 1; i <= 5; i++) {
     setTimeout(() => {
