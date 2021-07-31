@@ -40,23 +40,26 @@ if (y) {
   console.log("Inside Y");
 }
 
-
 var x = 220;
 var y = "Hello";
 var z = undefined;
-        
-console.log(x || y)    // Returns 220 since the first value is truthy
-        
-console.log(x || z)   // Returns 220 since the first value is truthy
-        
-console.log(x && y)    // Returns "Hello" since both the values are truthy
-        
-console.log(y && z)   // Returns undefined since the second value is falsy
-        
-if( x && y ){ 
-  console.log("Code runs" ); // This block runs because x && y returns "Hello" (Truthy)
-}   
-        
-if( x || z ){
-  console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
+
+console.log(x || y); // Returns 220 since the first value is truthy
+
+console.log(x || z); // Returns 220 since the first value is truthy
+
+console.log(x && y); // Returns "Hello" since both the values are truthy
+
+console.log(y && z); // Returns undefined since the second value is falsy
+
+if (x && y) {
+  console.log("Code runs"); // This block runs because x && y returns "Hello" (Truthy)
 }
+
+if (x || z) {
+  console.log("Code runs"); // This block runs because x || y returns 220(Truthy)
+}
+
+var a1 = 12;
+var b1 = "12";
+console.log(a1 == b1); // Returns true because both 'a' and 'b' are converted to the same type and then compared. Hence the operands are equal.
