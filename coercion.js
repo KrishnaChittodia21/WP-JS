@@ -16,3 +16,13 @@ var a;
 if(a){
     console.log('a has something')
 }
+
+//* when + operator is used it will concatenate both the Number with string but in case of - it will convert string to number then perform subtraction
+
+var t1 = "1";
+var t2 = 2;
+console.log(t2+t1);
+
+var t3 = "1";
+var t4 = 2;
+console.log(t4-t3);
