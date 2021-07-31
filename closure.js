@@ -23,3 +23,14 @@ var callIt2 = doThing2();
 callIt2[0]();
 callIt2[1]();
 callIt2[2]();
+
+function ad(x){
+  return function(y) {
+    return x+y;
+  }
+}
+var a1 = ad(5);
+var a2 = ad(10);
+
+console.log(a1(5));
+console.log(a2(10));
