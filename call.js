@@ -1,3 +1,6 @@
+//* This method invokes a method (function) by specifying the owner object.
+
+
 var userDetails = {
   firstName: "krishna",
   secondName: "chittodia",

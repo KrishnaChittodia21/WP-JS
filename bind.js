@@ -1,5 +1,4 @@
-//* This method invokes a method (function) by specifying the owner object.
-
+//* This method returns a new function, where the value of “this” skeyword will be bound to the owner object, which is provided as a parameter.
 var userDetails = {
   firstName: "krishna",
   secondName: "chittodia",
