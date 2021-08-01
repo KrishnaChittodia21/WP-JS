@@ -70,11 +70,17 @@
 // for(var j = 0;j<100000;j++){
 //   console.log("helloo");
 // }
-console.log("a");
-setTimeout(() => {
-  console.log("b");
-}, 0);
-console.log("c");
-setInterval(() => {
-  console.log("d");
-}, 100);
+// console.log("a");
+// setTimeout(() => {
+//   console.log("b");
+// }, 0);
+// console.log("c");
+// setInterval(() => {
+//   console.log("d");
+// }, 100);
+
+{
+  var a = "hello";
+}
+
+console.log(a)
