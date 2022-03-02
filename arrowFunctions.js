@@ -26,3 +26,6 @@ var obj3 = {
 
 obj2.valueOfThis(); // Will return the object obj1
 obj3.valueOfThis(); // Will return window/global object
+
+/* An arrow function expression is a compact alternative to a traditional function expression,
+but is limited and can't be used in all situations. */

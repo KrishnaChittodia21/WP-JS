@@ -22,3 +22,6 @@ printUserDetails.call(userDetails) //* we can also pass arguments if required by
 //* we can also use apply which works exactly same with one difference i.e it accepts array of arguments instead of separate argument
 
 printUserDetails.apply(userDetails);
+
+//* The call() allows for a function/method belonging to one object to be assigned and called for a different object.
+//* call() provides a new value of this to the function/method. With call(), you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.

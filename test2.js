@@ -69,7 +69,7 @@ ex(function(err, data){
 console.log('ddddd');
 
 var obj = {
-    mm: 'jjj',
+    mm: 'Hello',
     oo: function(){
         (function(){
                 console.log(this.mm)
@@ -78,6 +78,7 @@ var obj = {
 }
 
 console.log(obj.oo());
+
 
 var pp = (function(x){
     delete x;
